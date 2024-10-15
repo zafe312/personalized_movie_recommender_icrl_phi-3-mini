@@ -26,6 +26,7 @@ pip install -r requirements.txt
 You’ll need an API key to access the Hugging Face API.
 
 Sign up or log in to Hugging Face. Go to Settings -> Access Tokens and create a new token. Copy the token.
+
 Create a .env file in the root directory of the project:
 
 ```bash
