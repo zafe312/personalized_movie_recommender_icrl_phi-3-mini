@@ -1,7 +1,7 @@
 # Personalized Recommender System with Explorative In-Context Reinforcement Learning
 
 This project implements a personalized recommender system using explorative In-Context Reinforcement Learning (ICRL) techniques. The recommender is built using a free Large Language Model (LLM) API (Hugging Face’s 
-Phi-3-mini-4k-instruct), which dynamically generates recommendations based on user preferences and feedback.
+Phi-3-mini-4k-instruct), which dynamically generates recommendations based on user preferences and feedback. Check out [this paper](https://arxiv.org/pdf/2410.05362) to know more about ICRL in LLMs.
 
 ## Features
 - **Personalized Recommendations**: Generates movie recommendations based on user preferences.
@@ -16,12 +16,12 @@ Phi-3-mini-4k-instruct), which dynamically generates recommendations based on us
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
-
+```
 ### 3. Install the Dependencies
 
 ```bash
 pip install -r requirements.txt
-
+```
 ### Set Up the API Key
 You’ll need an API key to access the Hugging Face API.
 
@@ -30,12 +30,12 @@ Create a .env file in the root directory of the project:
 
 ```bash
 touch .env
-
+```
 Add the following line to the .env file, replacing your_huggingface_api_key_here with your actual API key:
 
 ```bash
 HUGGINGFACE_API_KEY=your_huggingface_api_key_here
-
+```
 ### Run the Application
 python recommender_icrl.py
 
