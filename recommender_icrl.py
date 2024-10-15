@@ -6,6 +6,8 @@ my_api_key = os.getenv("HUGGINGFACE_API_KEY")
 
 from huggingface_hub import InferenceClient
 
+client = InferenceClient(api_key=my_api_key)
+
 user_context = {
     "favorite_genre": "Sci-Fi",
     "watched_movies": ["Inception", "Interstellar"]
